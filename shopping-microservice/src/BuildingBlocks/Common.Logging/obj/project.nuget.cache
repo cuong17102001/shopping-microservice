@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n9cBeYYKbCxvGWvHypFQRFNB9xQFq8nvOr1UmpuOdY26LijFvRM/+mFUbM+rlL9Wg7kLKMTBz2JQjJicPXCpjA==",
+  "dgSpecHash": "w8g3CCCJRwKR29SWvOpbKrSNfruJkw9EQCgA9GpgkgKMdZAEl/PzO5He3w7XcqysQcQqq2MSf84crKLLtz95dQ==",
   "success": true,
-  "projectFilePath": "C:\\doan\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
+  "projectFilePath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
