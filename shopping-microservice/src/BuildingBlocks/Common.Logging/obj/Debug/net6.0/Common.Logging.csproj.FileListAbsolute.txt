@@ -22,3 +22,4 @@ C:\Final project\shopping-microservice\shopping-microservice\src\BuildingBlocks\
 C:\Final project\shopping-microservice\shopping-microservice\src\BuildingBlocks\Common.Logging\obj\Debug\net6.0\refint\Common.Logging.dll
 C:\Final project\shopping-microservice\shopping-microservice\src\BuildingBlocks\Common.Logging\obj\Debug\net6.0\Common.Logging.pdb
 C:\Final project\shopping-microservice\shopping-microservice\src\BuildingBlocks\Common.Logging\obj\Debug\net6.0\ref\Common.Logging.dll
+C:\doan\shopping-microservice\shopping-microservice\src\BuildingBlocks\Common.Logging\obj\Debug\net6.0\Common.Logging.csproj.AssemblyReference.cache

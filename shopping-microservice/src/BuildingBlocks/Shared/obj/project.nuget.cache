@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CgCQlur0y17rwrbc8+5+SK8obiXwRraa/zvJFdZMJP+VLTt1IH4C05oiTIap8xJU8uEMku1PlQbwtEttFRvYeQ==",
+  "dgSpecHash": "HC8eqNmemfjk0vWtiqycga078CsHPkbR5jg9QI/9Ha6uKW2dU7Rx45uan29b8FWK+ZkFf+3BVvJiH2RikZk5KQ==",
   "success": true,
-  "projectFilePath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\Shared.csproj",
+  "projectFilePath": "C:\\doan\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

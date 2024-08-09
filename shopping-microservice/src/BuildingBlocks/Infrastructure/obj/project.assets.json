@@ -8,26 +8,25 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\heoda\\.nuget\\packages\\": {}
+    "C:\\Users\\davis.nguyen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\doan\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\heoda\\.nuget\\packages\\",
-      "outputPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\obj\\",
+      "projectPath": "C:\\doan\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\davis.nguyen\\.nuget\\packages\\",
+      "outputPath": "C:\\doan\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\heoda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\davis.nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

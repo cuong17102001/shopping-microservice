@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0t7Upkg6IoTCpTzOnMyD4NmTot80YyMMp6fFgfVaF6U28u2FckxSZS0IpG4bQFjKJHOWWzz5humCiXTZnyQyWA==",
+  "dgSpecHash": "KNJFHIXe0W2GyH+k6FxIzzRLHaOHJ1yZznC7xcVow+k4gWO8IpGXied4pT99yzCMa0CN0N884BTPTp5zXjffBQ==",
   "success": true,
-  "projectFilePath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\WebApps\\WebHealthStatus\\WebHealthStatus.csproj",
+  "projectFilePath": "C:\\doan\\shopping-microservice\\shopping-microservice\\src\\WebApps\\WebHealthStatus\\WebHealthStatus.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

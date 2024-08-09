@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P6oZGk3coprfrCSy+gRRfirXEaYKYwfZkM2KCVr1IaK5G8b+vHLCo2BCcI0HLLG0iVNCzpbs6Xfp3ikEDry2CQ==",
+  "dgSpecHash": "D60DBIPsa3HFuGZpjJpbaZjCpwu9vMMxjfZOyNwcU2qhkSYcDtZ7J4xbcBMcwywjKu4wluwACiwxV4W0zYbSOQ==",
   "success": true,
-  "projectFilePath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj",
+  "projectFilePath": "C:\\doan\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
