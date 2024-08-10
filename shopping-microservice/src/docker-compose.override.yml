@@ -14,25 +14,25 @@ services:
 
 
   productdb:
-    container_name: productdb
-    environment:
-      SA_PASSWORD: "Passw0rD!"
-    restart: always
-    volumes:
+      container_name: productdb
+      environment:
+        MYSQL_ROOT_PASSWORD: "Passw0rD!"
+      restart: always
+      volumes:
         - mysql_data:/var/lib/mysql
-    ports:
+      ports:
         - "3306:3306"
 
   customerdb:
-    container_name: customerdb
-    environment:
-        - POSTGES_USER=admin
-        - POSTGES_PASSWORD=admin1234
-        - POSTGES_DB=DiscountDb
-    restart: always
-    volumes:
-        - postgres:/var/lib/postgresql/data
-    ports:
+      container_name: customerdb
+      environment:
+        - POSTGRES_USER=admin
+        - POSTGRES_PASSWORD=admin1234
+        - POSTGRES_DB=DiscountDb
+      restart: always
+      volumes:
+        - postgres_data:/var/lib/postgresql/data
+      ports:
         - "5433:5432"
 
   basketdb:
@@ -60,7 +60,7 @@ services:
   pgadmin:
     container_name: pgadmin
     environment:
-        - PGADMIN_DEFAULT_EMAIL=admin@cuong_microservice.com
+        - PGADMIN_DEFAULT_EMAIL=admin@gmail.com
         - PGADMIN_DEFAULT_PASSWORD=admin1234
     restart: always
     volumes:

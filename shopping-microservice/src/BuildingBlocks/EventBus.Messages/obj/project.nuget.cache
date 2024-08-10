@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AGsJtopVK/kfkIU2gcc80kFoJnv98dQB7/Zp8CgeiyKdWxTB2/Vezv9fDIUpgU3DlkDE4pmerQSQAcuK+0plDA==",
+  "dgSpecHash": "pTrKMtOKIgYSA2IZptVrskDKK52SMAVJDStmAvhcRnXFOkpNrtQJdrSaCLnflVCdBRdAhrFscTSBqMRrHXVmbA==",
   "success": true,
-  "projectFilePath": "C:\\doan\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
+  "projectFilePath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
