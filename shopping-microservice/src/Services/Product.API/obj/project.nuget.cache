@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XUO39NYPAdN39AsvAgXkzW4j5YBadMudYX8QXMPJwFswdig2l1x3vtMl+jqg4qBrhXwTpnE2QoQfWYGicVPrjA==",
+  "dgSpecHash": "/KmtfBNFder0E4LD0IVDM3s+I6Iqns1rzN6jhXaSARjNbFpN3QDnTPJD8GJovUFRSi9ID5hiR9UEwkXA/4Pc1g==",
   "success": true,
   "projectFilePath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\Services\\Product.API\\Product.API.csproj",
   "expectedPackageFiles": [
