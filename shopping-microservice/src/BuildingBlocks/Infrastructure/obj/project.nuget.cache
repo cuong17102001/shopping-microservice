@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+OZMoaJBS6Vf69fFNDSqWaWL/TzofNDmZ+foBlZQN6OuKA3KF9R/KEVRCPLFL+s5nW566y8Nb06T1pHQ4kcwDw==",
+  "dgSpecHash": "d8b/ALzTn9lfobUm4KtmvHY0SwXb3BdXJ4lgpLydCC55alFdMDCvOmFOkseSnbOk53swJbvUA/sRs7yE5Fck+g==",
   "success": true,
   "projectFilePath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\heoda\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\heoda\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\heoda\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.32\\microsoft.entityframeworkcore.6.0.32.nupkg.sha512",
     "C:\\Users\\heoda\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.32\\microsoft.entityframeworkcore.abstractions.6.0.32.nupkg.sha512",
     "C:\\Users\\heoda\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.32\\microsoft.entityframeworkcore.analyzers.6.0.32.nupkg.sha512",

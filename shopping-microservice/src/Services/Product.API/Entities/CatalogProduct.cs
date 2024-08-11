@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Product.API.Entities
 {
+    [Table("Products")]
     public class CatalogProduct : EntityAuditBase<long>
     {
         [Required]
