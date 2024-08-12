@@ -1,0 +1,39 @@
+# Ignore .NET build directories
+**/bin/
+**/obj/
+
+# Ignore user-specific files
+*.swp
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore other build-related files
+*.nupkg
+*.lock.json
+project.lock.json
+
+# Ignore logs
+*.log
+logs/
+**/*.log
+
+# Ignore build outputs
+_build/
+out/
+dist/
+
+# Ignore Git-related files
+.git
+.gitignore
+.gitattributes
+
+# Ignore Docker-related files
+docker-compose*
+Dockerfile*
+
+# Ignore temp files
+**/*.tmp
+**/*.temp
+**/*.DS_Store

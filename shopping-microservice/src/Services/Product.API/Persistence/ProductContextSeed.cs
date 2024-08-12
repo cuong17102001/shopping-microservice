@@ -10,7 +10,7 @@ namespace Product.API.Persistence
         {
             if (productContext == null)
             {
-                productContext.AddRangeAsync(GetCatalogProducts());
+                await productContext.AddRangeAsync(GetCatalogProducts());
                 await productContext.SaveChangesAsync();
                 logger.Information("Seeded data for Product Db");
             }
