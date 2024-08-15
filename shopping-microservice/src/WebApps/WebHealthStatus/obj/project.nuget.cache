@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0t7Upkg6IoTCpTzOnMyD4NmTot80YyMMp6fFgfVaF6U28u2FckxSZS0IpG4bQFjKJHOWWzz5humCiXTZnyQyWA==",
+  "dgSpecHash": "U0mVzFCcaKA=",
   "success": true,
-  "projectFilePath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\WebApps\\WebHealthStatus\\WebHealthStatus.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\WebApps\\WebHealthStatus\\WebHealthStatus.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.33\\microsoft.netcore.app.host.win-x64.6.0.33.nupkg.sha512"
+  ],
   "logs": []
 }

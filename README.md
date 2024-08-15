@@ -14,7 +14,7 @@ API local env
 
 - product API: http://localhost:6002/swagger
 - basket API: http://localhost:6070/swagger
-- customer API: http://localhost:7091/swagger
+- customer API: http://localhost:6003/swagger
 - inventory API: http://localhost:7028/swagger
 - ordering API: http://localhost:7090/swagger
 - hangfire API: http://localhost:7022/swagger
@@ -26,7 +26,7 @@ API local env
 - mongodb API: http://localhost:7077/swagger
 - redis API: http://localhost:7087/swagger
 - pgadmin API: http://localhost:5050/swagger
-- portainer API: http://localhost:8080/swagger
+- portainer API: http://localhost:9000 usn: admin pwd:cuongpro1710
 - elasticsearch API: http://localhost:7095/swagger
 - kibana API: http://localhost:7056/swagger
 

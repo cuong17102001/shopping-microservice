@@ -437,19 +437,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\heoda\\.nuget\\packages\\": {}
+    "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj",
+      "projectUniqueName": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj",
       "projectName": "OcelotApiGw",
-      "projectPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj",
-      "packagesPath": "C:\\Users\\heoda\\.nuget\\packages\\",
-      "outputPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\ApiGateways\\OcelotApiGw\\obj\\",
+      "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj",
+      "packagesPath": "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\ApiGateways\\OcelotApiGw\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\heoda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nguyen Quoc Cuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -457,6 +457,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -469,6 +470,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -499,7 +505,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

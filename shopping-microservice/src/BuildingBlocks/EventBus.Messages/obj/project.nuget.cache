@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pTrKMtOKIgYSA2IZptVrskDKK52SMAVJDStmAvhcRnXFOkpNrtQJdrSaCLnflVCdBRdAhrFscTSBqMRrHXVmbA==",
+  "dgSpecHash": "U2wIQ9urfY8=",
   "success": true,
-  "projectFilePath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\heoda\\.nuget\\packages\\": {}
+    "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\Shared.csproj",
+      "projectUniqueName": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\Shared.csproj",
       "projectName": "Shared",
-      "projectPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\Shared.csproj",
-      "packagesPath": "C:\\Users\\heoda\\.nuget\\packages\\",
-      "outputPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\obj\\",
+      "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\Shared.csproj",
+      "packagesPath": "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\heoda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nguyen Quoc Cuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,6 +28,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -40,6 +41,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -56,12 +62,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

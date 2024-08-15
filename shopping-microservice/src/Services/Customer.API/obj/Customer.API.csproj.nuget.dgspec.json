@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\Services\\Customer.API\\Customer.API.csproj": {}
+    "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\Services\\Customer.API\\Customer.API.csproj": {}
   },
   "projects": {
-    "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\Services\\Customer.API\\Customer.API.csproj": {
+    "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\Services\\Customer.API\\Customer.API.csproj",
-        "projectName": "Customer.API",
-        "projectPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\Services\\Customer.API\\Customer.API.csproj",
-        "packagesPath": "C:\\Users\\heoda\\.nuget\\packages\\",
-        "outputPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\Services\\Customer.API\\obj\\",
+        "projectUniqueName": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
+        "projectName": "Common.Logging",
+        "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
+        "packagesPath": "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\heoda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nguyen Quoc Cuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,12 +35,270 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Sinks.Debug": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nguyen Quoc Cuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.32, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nguyen Quoc Cuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\Services\\Customer.API\\Customer.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\Services\\Customer.API\\Customer.API.csproj",
+        "projectName": "Customer.API",
+        "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\Services\\Customer.API\\Customer.API.csproj",
+        "packagesPath": "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\Services\\Customer.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nguyen Quoc Cuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
+                "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
+              },
+              "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj"
+              },
+              "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.29, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -64,7 +323,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

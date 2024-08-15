@@ -3450,19 +3450,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\heoda\\.nuget\\packages\\": {}
+    "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\Services\\Product.API\\Product.API.csproj",
+      "projectUniqueName": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\Services\\Product.API\\Product.API.csproj",
       "projectName": "Product.API",
-      "projectPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\Services\\Product.API\\Product.API.csproj",
-      "packagesPath": "C:\\Users\\heoda\\.nuget\\packages\\",
-      "outputPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\Services\\Product.API\\obj\\",
+      "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\Services\\Product.API\\Product.API.csproj",
+      "packagesPath": "C:\\Users\\Nguyen Quoc Cuong\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\Services\\Product.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\heoda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nguyen Quoc Cuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3470,23 +3470,24 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
-              "projectPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
+            "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
+              "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
             },
-            "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj"
+            "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Contracts\\Contracts.csproj"
             },
-            "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj"
             },
-            "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Final project\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\Shared.csproj"
+            "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Projects\\shopping-microservice\\shopping-microservice\\src\\BuildingBlocks\\Shared\\Shared.csproj"
             }
           }
         }
@@ -3495,6 +3496,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3571,7 +3577,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
