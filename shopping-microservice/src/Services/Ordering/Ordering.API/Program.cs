@@ -1,17 +1,15 @@
-using Basket.API.Extensions;
 using Common.Logging;
+using Ordering.Infrastructure;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseSerilog(Serilogger.Configure);
 
-Log.Information("Start Basket API up");
+Log.Information("Start Ordering API up");
 
 try
 {
-    builder.Host.AddAppConfigurations();
-    builder.Services.ConfigureServices();
-    builder.Services.ConfigureRedis(builder.Configuration);
+    builder.Services.AddConfiguration(builder.Configuration);
 
     builder.Services.AddControllers();
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -47,6 +45,6 @@ catch (Exception ex)
 }
 finally
 {
-    Log.Information("Shutdown Basket API complete");
+    Log.Information("Shutdown Ordering API complete");
     Log.CloseAndFlush();
 }

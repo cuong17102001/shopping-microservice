@@ -2,6 +2,7 @@
 using Basket.API.Ropositories.Interfaces;
 using Contracts.Common.Interfaces;
 using Microsoft.Extensions.Caching.Distributed;
+using ILogger = Serilog.ILogger;
 
 namespace Basket.API.Ropositories
 {
@@ -9,11 +10,13 @@ namespace Basket.API.Ropositories
     {
         private readonly IDistributedCache _redisCacheService;
         private readonly ISerializeService _serializerService;
+        private readonly ILogger _logger;
 
-        public BasketRepository(IDistributedCache distributedCache, ISerializeService serializeService)
+        public BasketRepository(IDistributedCache distributedCache, ISerializeService serializeService, ILogger logger)
         {
             _redisCacheService = distributedCache;
             _serializerService = serializeService;
+            _logger = logger;
         }
 
         public async Task DeleteBasketByUsername(string username)
@@ -24,7 +27,7 @@ namespace Basket.API.Ropositories
             }
             catch (System.Exception e)
             {
-                Console.WriteLine(e);
+                _logger.Error("DeleteBasketByUsername", e);
                 throw;
             }
         }
