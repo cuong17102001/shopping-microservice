@@ -27,8 +27,7 @@ try
     });
 
     builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
-    builder.Services.AddScoped(typeof(IRepositoryBaseAsync<,,>), typeof(RepositoryBaseAsync<,,>));
-    builder.Services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
+    builder.Services.AddScoped(typeof(IRepositoryQueryBase<,,>), typeof(RepositoryQueryBase<,,>));
     builder.Services.AddScoped<ICustomerService, CustomerService>();
 
     var app = builder.Build();

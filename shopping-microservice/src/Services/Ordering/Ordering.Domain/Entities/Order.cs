@@ -1,4 +1,5 @@
 using Contracts.Domains;
+using Ordering.Domain.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -23,5 +24,6 @@ namespace Ordering.Domain.Entities
         public string EmailAddress { get; set; }
         [Column(TypeName = "nvarchar(250)")]
         public string InvoiceAddress { get; set; }
+        public EOrderStatus Status{ get; set; }
     }
 }
