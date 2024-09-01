@@ -6,6 +6,8 @@ using Infrastructure.Services;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Ordering.Application.Common.Behaviours;
+using Ordering.Application.Feature.V1.Orders.Commands.CreateOrder;
+using Ordering.Domain.Entities;
 
 namespace Ordering.Application;
 

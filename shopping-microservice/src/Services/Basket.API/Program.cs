@@ -1,3 +1,4 @@
+using Basket.API;
 using Basket.API.Extensions;
 using Common.Logging;
 using Serilog;
@@ -12,6 +13,9 @@ try
     builder.Host.AddAppConfigurations();
     builder.Services.ConfigureServices();
     builder.Services.ConfigureRedis(builder.Configuration);
+    builder.Services.AddAutoMapper(cfg => cfg.AddProfile(new MappingProfile()));
+    builder.Services.ConfigurationSetting(builder.Configuration);
+    builder.Services.ConfigurationMassTransit(builder.Configuration);
 
     builder.Services.AddControllers();
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

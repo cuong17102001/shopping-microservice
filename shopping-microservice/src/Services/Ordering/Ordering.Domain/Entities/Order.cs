@@ -19,7 +19,7 @@ namespace Ordering.Domain.Entities
         public string LastName { get; set; }
         [Required]
         [Column(TypeName = "nvarchar(250)")]
-        public string ShoppingAddress { get; set; }
+        public string ShippingAddress { get; set; }
         [Column(TypeName = "nvarchar(250)")]
         public string EmailAddress { get; set; }
         [Column(TypeName = "nvarchar(250)")]

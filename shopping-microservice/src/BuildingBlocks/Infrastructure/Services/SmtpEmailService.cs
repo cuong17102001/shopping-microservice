@@ -44,6 +44,7 @@ namespace Infrastructure.Services
             {
                 emailMessage.To.Add(MailboxAddress.Parse(request.ToAddress));
             }
+            await _smtpClient.SendAsync(emailMessage, cancellationToken);
         }
     }
 }

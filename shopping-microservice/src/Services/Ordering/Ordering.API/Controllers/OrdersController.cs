@@ -1,9 +1,11 @@
 ﻿using BuildingBlocks.Contracts.Services;
 using BuildingBlocks.Shared.Services.Email;
+using Contracts.Messages;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Ordering.Application.Common.Models;
-using Ordering.Application.Features.V1.Orders.Queries.GetOrders;
+using Ordering.Application.Feature.V1.Orders.Commands.CreateOrder;
+using Ordering.Application.Feature.V1.Orders.Queries.GetOrders;
 
 namespace Ordering.API.Controllers
 {
@@ -13,17 +15,26 @@ namespace Ordering.API.Controllers
     {
         private readonly IMediator _mediator;
         private readonly IEmailService<MailRequest> _emailService;
+        private readonly IMessageProducer _messageProducer;
 
-        public OrdersController(IMediator mediator, IEmailService<MailRequest> emailService)
+        public OrdersController(IMediator mediator, IEmailService<MailRequest> emailService, IMessageProducer messageProducer)
         {
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
             _emailService = emailService ?? throw new ArgumentException(nameof(emailService));
+            _messageProducer = messageProducer ?? throw new ArgumentNullException(nameof(messageProducer));
         }
 
         private static class RouteNames
         {
             public const string GetOrders = nameof(GetOrders);
         }
+
+        //[HttpPost]
+        //public async Task<IActionResult> Create([FromBody] CreateOrderCommand request)
+        //{
+        //    var result = await _mediator.Send(request);
+        //    return Ok(result);
+        //}
 
         [HttpGet("{username}", Name = RouteNames.GetOrders)]
         [ProducesResponseType(typeof(IEnumerable<OrderDto>), StatusCodes.Status200OK)]
