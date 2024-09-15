@@ -1,0 +1,51 @@
+name: Build and Deploy .NET Microservices
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        service: [Basket.API, Product.API, Ordering/Ordering.API]
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore ./shopping-microservice/shopping-microservice.sln
+
+      - name: Build the service
+        run: dotnet build ./shopping-microservice/shopping-microservice.sln --configuration Release
+
+      - name: Convert matrix.service to lowercase
+        id: lowercase
+        run: |
+          # Chuyển đổi thành chữ thường
+          service=${{ matrix.service }}
+          service_lower=$(echo "$service" | tr '[:upper:]' '[:lower:]')
+
+          # Kiểm tra và thay dấu '/' bằng dấu '-'
+          service_normalized=$(echo "$service_lower" | sed 's/\//-/g')
+
+          echo "SERVICE=${service_normalized}" >> $GITHUB_ENV
+
+      - name: Build Docker image
+        run: |
+          docker build -f ./shopping-microservice/src/Services/${{ matrix.service }}/Dockerfile -t cuongnq1710/${{ env.SERVICE }}:latest ./shopping-microservice/src/
+
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Push Docker image to Docker Hub
+        run: docker push cuongnq1710/${{ env.SERVICE }}:latest

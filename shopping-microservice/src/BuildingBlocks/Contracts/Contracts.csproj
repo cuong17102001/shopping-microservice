@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.32" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\NewFolder\" />
   </ItemGroup>
 
 </Project>
