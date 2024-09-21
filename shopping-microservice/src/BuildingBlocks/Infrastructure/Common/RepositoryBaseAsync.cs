@@ -26,30 +26,42 @@ namespace Infrastructure.Common
 
         public Task<IDbContextTransaction> BeginTransactionAsync() => _context.Database.BeginTransactionAsync();
 
+        public K Create(T entity)
+        {
+            _context.Set<T>().Add(entity);
+            return entity.Id;
+        }
+
         public async Task<K> CreateAsync(T entity)
         {
             await _context.Set<T>().AddAsync(entity);
+            await SaveChangesAsync();
             return entity.Id;
         }
 
         public async Task<IList<K>> CreateListAsync(IEnumerable<T> entities)
         {
             await _context.Set<T>().AddRangeAsync(entities);
+            await SaveChangesAsync();
             return entities.Select(x => x.Id).ToList();
         }
 
-        public Task DeleteAsync(T entity)
+        public async void Delete(T entity)
         {
             _context.Set<T>().Remove(entity);
-
-            return Task.CompletedTask;
+            await _context.SaveChangesAsync();
         }
 
-        public Task DeleteListAsync(IEnumerable<T> entities)
+        public async Task DeleteAsync(T entity)
+        {
+            _context.Set<T>().Remove(entity);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteListAsync(IEnumerable<T> entities)
         {
             _context.Set<T>().RemoveRange(entities);
-
-            return Task.CompletedTask;
+            await _context.SaveChangesAsync();
         }
 
         public async Task EndTransactionAsync()
@@ -62,16 +74,20 @@ namespace Infrastructure.Common
 
         public Task<int> SaveChangesAsync() => _unitOfWork.CommitAsync();
 
-        public Task UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity)
         {
-            if(_context.Entry(entity).State == EntityState.Unchanged) return Task.CompletedTask;
+            if (_context.Entry(entity).State == EntityState.Unchanged) return;
 
             T exist = _context.Set<T>().Find(entity.Id);
             _context.Entry(exist).CurrentValues.SetValues(entity);
 
-            return Task.CompletedTask;
+            await SaveChangesAsync();
         }
 
-        public Task UpdateListAsync(IEnumerable<T> entities) => _context.Set<T>().AddRangeAsync(entities);
+        public async Task UpdateListAsync(IEnumerable<T> entities) 
+        {
+            await _context.Set<T>().AddRangeAsync(entities);
+            await SaveChangesAsync();
+        }
     }
 }

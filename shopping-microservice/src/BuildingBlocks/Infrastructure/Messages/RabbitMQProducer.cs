@@ -19,6 +19,7 @@ public class RabbitMQProducer : IMessageProducer
         var connectionFactory = new ConnectionFactory
         {
             HostName = "localhost",
+            Port = 5672
         };
 
         var connection = connectionFactory.CreateConnection();

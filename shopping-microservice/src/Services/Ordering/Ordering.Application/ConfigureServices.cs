@@ -1,7 +1,11 @@
 using System.Reflection;
 using BuildingBlocks.Contracts.Services;
 using BuildingBlocks.Shared.Services.Email;
+using Contracts.Common.Interfaces;
+using Contracts.Messages;
 using FluentValidation;
+using Infrastructure.Common;
+using Infrastructure.Messages;
 using Infrastructure.Services;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,6 +26,8 @@ public static class ConfigureServices
         services.AddTransient(typeof(IPipelineBehavior<,>), typeof(PerformanceBehaviour<,>));
         services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
         services.AddSingleton<IEmailService<MailRequest>, SmtpEmailService>();
+        services.AddScoped<IMessageProducer, RabbitMQProducer>();
+        services.AddScoped<ISerializeService, SerializeService>();
         return services;
     }
 }

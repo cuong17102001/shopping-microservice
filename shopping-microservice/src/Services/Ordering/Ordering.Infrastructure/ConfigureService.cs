@@ -16,6 +16,7 @@ public static class ConfigureService
         services.AddDbContext<OrderingDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("OrderingConnection"),
             builder => builder.MigrationsAssembly(typeof(OrderingDbContext).Assembly.FullName)));
+        var test = Configuration.GetConnectionString("OrderingConnection");
 
         services.AddScoped<IOrderRepository, OrderRepository>();
         services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));

@@ -37,7 +37,7 @@ namespace Ordering.Domain.Entities
 
         public Order DeletedOrder()
         {
-            RemoveDomainEvent(new OrderDeletedEvent(Id));
+            AddDomainEvent(new OrderDeletedEvent(Id));
             return this;
         }
     }

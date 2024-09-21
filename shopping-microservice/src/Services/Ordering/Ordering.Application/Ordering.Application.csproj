@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Feature\V1\Orders\Commands\DeleteOrder\" />
     <Folder Include="Feature\V1\Orders\Commands\UpdateOrder\" />
     <Folder Include="Feature\V1\Orders\EventHandlers\" />
   </ItemGroup>

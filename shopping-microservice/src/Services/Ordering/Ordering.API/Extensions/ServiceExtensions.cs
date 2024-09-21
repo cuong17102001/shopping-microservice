@@ -1,4 +1,6 @@
 using BuildingBlocks.Infrastructure.Configurations;
+using Contracts.Messages;
+using Infrastructure.Messages;
 using MassTransit;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Ordering.API.Application.IntergrationEvents.EventHandlers;

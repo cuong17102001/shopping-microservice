@@ -3,6 +3,7 @@ using BuildingBlocks.Core.SeedWork;
 using MediatR;
 using Ordering.Application.Common.Interfaces;
 using Ordering.Domain.Entities;
+using ILogger = Serilog.ILogger;
 
 namespace Ordering.Application.Feature.V1.Orders.Commands.CreateOrder
 {
@@ -10,15 +11,18 @@ namespace Ordering.Application.Feature.V1.Orders.Commands.CreateOrder
     {
         private readonly IMapper _mapper;
         private readonly IOrderRepository _orderRepository;
+        private readonly ILogger _logger;
 
-        public CreateOrderCommandHandler(IMapper mapper, IOrderRepository orderRepository)
+        public CreateOrderCommandHandler(IMapper mapper, IOrderRepository orderRepository, ILogger logger)
         {
             _mapper = mapper;
             _orderRepository = orderRepository;
+            _logger = logger;
         }
 
         async Task<ApiResult<long>> IRequestHandler<CreateOrderCommand, ApiResult<long>>.Handle(CreateOrderCommand request, CancellationToken cancellationToken)
         {
+            _logger.Information("Start add order");
             var order = new Order
             {
                 UserName = request.UserName,
@@ -29,7 +33,10 @@ namespace Ordering.Application.Feature.V1.Orders.Commands.CreateOrder
                 EmailAddress = request.EmailAddress,
                 InvoiceAddress = request.InvoiceAddress,
             };
-            var result = await _orderRepository.AddOrderAsync(order);
+            var result = _orderRepository.Create(order);
+            order.AddedOrder();
+            await _orderRepository.SaveChangesAsync();
+            _logger.Information("End add order");
             return new ApiSuccessResult<long>(result);
         }
     }
