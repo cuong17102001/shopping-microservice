@@ -1,8 +1,16 @@
+using Shared.Dtos.Inventory;
+
 namespace BuildingBlocks.Core.SeedWork;
 
 public class PagedList<T> : List<T>{
 
     private MetaData _meta;
+    private IEnumerable<InventoryEntryDto> items;
+
+    public PagedList(IEnumerable<InventoryEntryDto> items)
+    {
+        this.items = items;
+    }
 
     public PagedList(IEnumerable<T> items, long totalItems, int pageNumber, int pageSize){
         _meta = new MetaData(){
